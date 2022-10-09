@@ -1,0 +1,34 @@
+<h4 class="heading"> Angular Animations </h4>
+
+<div>
+    <div>
+        <div id="content" [@focusPanel]='state' (mouseover)="toggleBackground()" (mouseout)="toggleBackground()">Watch this fade</div>
+    </div>
+</div>
+
+<h4 class="heading">Toggle DIV</h4>
+
+<div [@animationToggle]='contentDiv' class="animateToggle" >
+    This DIV will toggle Show/Hide
+</div>
+
+<button (click)="showHideDiv()">Show Button </button>
+
+<h4>Keyframe Effects</h4>
+
+<div class="animateElement" [@animationState]="left" (click)="onClick()">
+	Click to slide right/ Toggle to move div
+</div>
+
+<h4>Sidebar Collapse Menu</h4>
+
+<button (click)="toggleMenu()" >Toggle Menu</button>
+ <div class="menu" [@toggleMenu]="menuState">
+  <ul >
+    <li>Home</li>
+    <li>Angular</li>
+    <li>Material Design</li>
+  </ul>
+</div>
+
+
