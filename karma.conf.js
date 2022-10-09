@@ -25,7 +25,7 @@ module.exports = function (config) {
       suppressAll: true // removes the duplicated traces
     },
     coverageReporter: {
-      dir: require('path').join(__dirname, './coverage/routing-navigation'),
+      dir: require('path').join(__dirname, './coverage/routing-navigation-animations'),
       subdir: '.',
       reporters: [
         { type: 'html' },

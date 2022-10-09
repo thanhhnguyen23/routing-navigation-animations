@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'routing-navigation';
+  title = 'examples of routing // navigation // angular animations';
 }

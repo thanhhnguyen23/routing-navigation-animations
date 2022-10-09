@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "routing-navigation": {
+    "routing-navigation-animations": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:application": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/routing-navigation",
+            "outputPath": "dist/routing-navigation-animations",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -68,10 +68,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "routing-navigation:build:production"
+              "browserTarget": "routing-navigation-animations:build:production"
             },
             "development": {
-              "browserTarget": "routing-navigation:build:development"
+              "browserTarget": "routing-navigation-animations:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -79,7 +79,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "routing-navigation:build"
+            "browserTarget": "routing-navigation-animations:build"
           }
         },
         "test": {
@@ -102,5 +102,5 @@
       }
     }
   },
-  "defaultProject": "routing-navigation"
+  "defaultProject": "routing-navigation-animations"
 }
